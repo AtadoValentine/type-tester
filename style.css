@@ -9,6 +9,7 @@
 body {
     background-color: black;
     color: white;
+    overflow-x: hidden;
 }
 
 .myTitle {
@@ -161,3 +162,19 @@ font-weight: bold;
         justify-content: space-between;
         align-items: center;
     }
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    input, textarea, button {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
